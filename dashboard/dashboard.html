@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Bharat Darshan</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+            <h1>Bharat <span>Darshan</span></h1>
+            <div>
+                <span>Admin Dashboard</span>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+
+            <h2>Dashboard Overview</h2>
+            <p>Welcome to the Bharat Darshan Admin Panel.</p>
+
+            <section class="stats-container">
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <p id="totalUsers">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Total Bookings</h3>
+                    <p id="totalBookings">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Pending Bookings</h3>
+                    <p id="pendingBookings">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Contact Messages</h3>
+                    <p id="totalContacts">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Total Reviews</h3>
+                    <p id="totalReviews">0</p>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <h2>Manage Bookings</h2>
+                <div id="bookingsContainer">Loading bookings...</div>
+            </section>
+
+            <section class="dashboard-section">
+                <h2>Manage Users</h2>
+                <div id="usersContainer">Loading users...</div>
+            </section>
+
+            <section class="dashboard-section">
+                <h2>Contact Messages</h2>
+                <div id="contactsContainer">Loading messages...</div>
+            </section>
+
+            <section class="dashboard-section">
+                <h2>Manage Reviews</h2>
+                <div id="reviewsContainer">Loading reviews...</div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
